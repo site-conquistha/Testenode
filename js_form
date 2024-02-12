@@ -1,0 +1,72 @@
+const formButtonProx = document.querySelector("#formButtonProx");
+const formButtonAnt = document.querySelector("#formButtonAnt");
+const radioImovel = document.querySelector("#radioimovel");
+const radioParceiro = document.querySelector("#radioparceiros");
+let step = 1
+let selecaoForm = 'imovel'
+document.querySelector("#formButtonAnt").classList.add('hidden')
+
+
+radioImovel.addEventListener('click', event => {
+    selecaoForm = 'imovel';
+})
+
+radioParceiro.addEventListener('click', event => {
+    selecaoForm = 'parceiro';
+})
+
+
+formButtonProx.addEventListener('click', event => {
+  event.preventDefault();
+  step += 1;
+  
+  if(step == 1) {
+    document.querySelector('#passo1').classList.remove('hidden')
+    document.querySelector('#passoParceiro').classList.add('hidden')
+    document.querySelector('#passoPessoaFisica').classList.add('hidden')
+    document.querySelector("#formButtonAnt").classList.add('hidden')
+    document.querySelector("#formButtonProx").classList.remove('hidden')
+    document.querySelector('#selecioneuma').classList.remove('hidden')
+  } else if ((step == 2) && (selecaoForm == 'parceiro')) {
+    document.querySelector('#passo1').classList.add('hidden')
+    document.querySelector('#passoParceiro').classList.remove('hidden')
+    document.querySelector('#passoPessoaFisica').classList.add('hidden')
+    document.querySelector("#formButtonAnt").classList.remove('hidden')
+    document.querySelector("#formButtonProx").classList.add('hidden')
+    document.querySelector('#selecioneuma').classList.add('hidden')
+  } else if ((step == 2) && (selecaoForm == 'imovel')) {
+    document.querySelector('#passo1').classList.add('hidden')
+    document.querySelector('#passoParceiro').classList.add('hidden')
+    document.querySelector('#passoPessoaFisica').classList.remove('hidden')
+    document.querySelector("#formButtonAnt").classList.remove('hidden')
+    document.querySelector("#formButtonProx").classList.add('hidden')
+    document.querySelector('#selecioneuma').classList.add('hidden')
+  }
+})
+
+formButtonAnt.addEventListener('click', event => {
+  event.preventDefault();
+  step -= 1;
+  if(step == 1) {
+    document.querySelector('#passo1').classList.remove('hidden')
+    document.querySelector('#passoParceiro').classList.add('hidden')
+    document.querySelector('#passoPessoaFisica').classList.add('hidden')
+    document.querySelector("#formButtonAnt").classList.add('hidden')
+    document.querySelector("#formButtonProx").classList.remove('hidden')
+    document.querySelector('#selecioneuma').classList.remove('hidden')
+  } else if ((step == 2) && (selecaoForm == 'parceiro')) {
+    document.querySelector('#passo1').classList.add('hidden')
+    document.querySelector('#passoParceiro').classList.remove('hidden')
+    document.querySelector('#passoPessoaFisica').classList.add('hidden')
+    document.querySelector("#formButtonAnt").classList.remove('hidden')
+    document.querySelector("#formButtonProx").classList.add('hidden')
+    document.querySelector('#selecioneuma').classList.add('hidden')
+  } else if ((step == 2) && (selecaoForm == 'imovel')) {
+    document.querySelector('#passo1').classList.add('hidden')
+    document.querySelector('#passoParceiro').classList.add('hidden')
+    document.querySelector('#passoPessoaFisica').classList.remove('hidden')
+    document.querySelector("#formButtonAnt").classList.remove('hidden')
+    document.querySelector("#formButtonProx").classList.add('hidden')
+    document.querySelector('#selecioneuma').classList.add('hidden')
+  }
+})

@@ -6,7 +6,8 @@
 		<meta name="author" content="Vítor Bernardo Sarmet">
 		<meta name="description" content="Alterar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-		<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css_desk.css">
+		<link rel="stylesheet" type="text/css" href="css_mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,18 +19,19 @@
 
 
    <body>
-  <!---------------------------------------------------- LOGO DO TOPO ------------------------------------------------>
+  <!---------------------------------------------------- LOGO DO TOPO + NAVBAR------------------------------------------------>
       <div class="content">
-        <div class="logo">
+        <div class="logo_mobile" id="home">
           <img src="./img/logo/LOGO HORIZONTAL.svg">
         </div>
-          <!-- <nav id="navbar" class="navtopo">
+
+        <nav id="navbar">
               <div class="nav-wrapper">
-                <div class="logo">
-                  <a href="#home"><img width="250px" height="160px" src="./img/logo/LOGO HORIZONTAL.svg"></a>
+                <div class="logo_desk">
+                  <img src="./img/logo/LOGO HORIZONTAL.svg">
                 </div>
   
-                <ul id="menu">
+                <ul>
                   <li><a href="#quemsomos">QUEM SOMOS</a></li>
                   <li><a href="#servicos">SERVIÇOS</a></li>
                   <li><a href="#contatos">PARCEIROS</a></li>
@@ -38,14 +40,19 @@
                   <li><a href="#simulador">SIMULADOR DE CRÉDITO</a></li>
                 </ul>
               </div>
-          </nav>   -->
+        </nav>
  
-          
+  
 
   <!---------------------------------------------------- BANNER PRINCIPAL ------------------------------------------------>         
           <div class="bannerprincipal">
-            <div class="imagensbanner">
+            <div class="imagensbanner_mobile">
               <img src="./img/pessoas/casal_mobile.webp"> 
+            </div>
+
+            <div class="imagensbanner_desk">
+              <img src="./img/pessoas/casal_desk.webp">
+              <img src="./img/icones/iconeconquistha.svg">
             </div>
 
             <div class="textobanner">
@@ -55,8 +62,10 @@
             </div>
 
             <div class="falecomagente">
-              <button type="button">Fale com a gente!</button>
+              <a href="https://wa.me/5516991224508"><button type="button">Fale com a gente!</button></a>
             </div>
+            
+            
              
           </div>
   
@@ -78,34 +87,45 @@
   <!---------------------------------------------------- TERCEIRA SEÇÃO ------------------------------------------------>
         <div class="containerterceira">
           <div class="terceirasection">
-            <div class="textosterceira">
 
-              <div class="contecom">
-                <p>Conte com a Conquistha para te assesorar a tomar a melhor decisão no processo de aquisição do seu imóvel.</p>
+            <div id="caixas">
+              <div class="caixae">
+                <img src="./img/caixas/caixa esquerda.png">
               </div>
-              
-              <div class="listaterceira">
-                <ul>
-                  <li>Assessoria imobiliária Gratuita</li>
-                  <li>Simulações de Crédito imobiliário</li>
-                  <li>Análise de Crédito junto às principais instituições financeiras</li>
-                  <li>Financiamento para imóvel novo ou usado (residencial ou comercial)</li>
-                  <li>Acompanhamento em todas as etapas do processo até a liberação dos recursos</li>
-                </ul>
+  
+              <div class="caixad">
+                <img src="./img/caixas/caixa direita.png">
               </div>
             </div>
 
-            <div class="querocontratar">
-              <button type="button">Quero contratar um dos serviços</button>
-            </div>
             
-            <div class="caixae">
-              <img src="./img/caixas/caixa esquerda.png">
-            </div>
+            <div class="textosterceira">
+              <div id="wrappertextosterceira_web">
+                <div class="contecom">
+                  <p>Conte com a Conquistha para te assesorar a tomar a melhor decisão no processo de aquisição do seu imóvel.</p>
+                </div>
+                
+                <div class="listaterceira">
+                  <ul>
+                    <li>Assessoria imobiliária Gratuita</li>
+                    <li>Simulações de Crédito imobiliário</li>
+                    <li>Análise de Crédito junto às principais instituições financeiras</li>
+                    <li>Financiamento para imóvel novo ou usado (residencial ou comercial)</li>
+                    <li>Acompanhamento em todas as etapas do processo até a liberação dos recursos</li>
+                  </ul>
+                </div>
 
-            <div class="caixad">
-              <img src="./img/caixas/caixa direita.png">
+                <div class="querocontratar">
+                  <a href="https://wa.me/5516991224508?text=Olá, quero contratar um dos serviços!"><button type="button">Quero contratar um dos serviços</button></a>
+                </div>
+              </div>
+  
+              
             </div>
+              
+            
+            
+            
           </div>
         </div>
         
@@ -147,7 +167,7 @@
           </div>
           
           <div class="faleconosco">
-            <button type="button">Fale conosco</button>
+            <a href="https://wa.me/5516991224508"><button type="button">Fale conosco</button></a>
           </div>
           
         </div>
@@ -196,7 +216,7 @@
           </div>
 
           <div class="irsimulador">
-            <button type="button">Ir para o simulador</button>
+            <a href="https://simulador.credipronto.com.br/?account_id=33706875-a084-5c92-4cc0-651719af279c"><button type="button">Ir para o simulador</button></a>
           </div> 
         </div>
         
@@ -303,20 +323,291 @@
 
 
   <!---------------------------------------------------- FORMULÁRIO DE ETAPAS (NONA SEÇÃO) ------------------------------------------------>     
-       <div class="formulario">
+       <div class="formularioGeral">
         <div class="textoformulario">
-          <div class="realizeseusonho">
-            <p>Realize seu sonho <span>com a Conquistha!</span></p>
+          <div id="wrapperrealize">
+            <div class="realizeseusonho">
+              <p>Realize seu sonho <span>com a Conquistha!</span></p>
+            </div>
           </div>
-
-          <div class="especialistas">
-            <p>Preencha os dados no formulário ao lado e obtenha rapidamente um retorno de um de nossos especialistas!</p>
-          </div>  
+          
+          <div id="wrapperespecialistas">
+            <div class="especialistas">
+              <p>Preencha os dados no formulário abaixo e <span>obtenha rapidamente um retorno de um de nossos especialistas!</span></p>
+            </div>
+          </div> 
         </div>
+
+
+        
+          <!-- Formulário de fato -->
+          <div class="formulario">
+            <div id="formselecione">
+              <p id="selecioneuma">Selecione uma das opções abaixo antes de prosseguir</p>
+            </div>
+            
+            <div class="wrapperpasso1">
+              <div id="passo1">
+                <div class="rimovel">
+                  <input type="radio" id="radioimovel" name="radioform">
+                  <label for="radioimovel">Quero comprar um imóvel</label><br>
+                </div>
+                
+                <div class="rparceiros">
+                  <input type="radio" id="radioparceiros" name="radioform">
+                  <label for="radioparceiros">Quero ser um parceiro</label><br>
+                </div>
+              </div><br>
+            </div>
+            
+            
+
+
+
+            <div class="wrapperparceiro">
+              <div id="passoParceiro" class="hidden">
+                <div id="margemcampos">
+                  <label for="ramoimobiliario">Em qual ramo imobiliário você trabalha?</label><br>
+                  <input type="text" id="ramoimobiliario"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="nomecompleto">Seu nome completo:</label><br>
+                  <input type="text" id="nomecompleto"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="nomeempresa">Nome da empresa (se for o caso):</label><br>
+                  <input type="text" id="nomeempresa"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="cidade">Cidade:</label><br>
+                  <input type="text" id="cidade"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="email">Email:</label><br>
+                  <input type="text" id="email"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="whatsapp">WhatsApp:</label><br>
+                  <input type="text" id="whatsapp"><br>
+                </div>
+              </div>
+            </div>
+            
+            
+
+
+
+            <div class="wrapperpf">
+              <div id="passoPessoaFisica" class="hidden">
+                <div id="margemcampos">
+                  <p>Dados 1* proponente:</p>
+                  <label for="nomecompleto">Nome completo:</label><br>
+                  <input type="text" id="nomecompleto"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="datadenascimento">Data de nascimento:</label><br>
+                  <input type="date" id="datadenascimento"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="cpf">CPF:</label><br>
+                  <input type="text" id="cpf"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="rg">RG:</label><br>
+                  <input type="text" id="rg"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="endereco">Endereço residencial:</label><br>
+                  <input type="text" id="endereco"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="telefone">Telefone:</label><br>
+                  <input type="text" id="telefone"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="email">E-mail:</label><br>
+                  <input type="text" id="email"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <br>
+                  <label for="wrapperEstadoCivil">Estado civil:</label><br>
+                  <div class="wrapperEstadoCivil">
+                    <label for="estado1">Solteiro (a)</label>
+                    <input type="radio" id="estado1" name="radioestado"><br>
+                  
+                    <label for="estado2">Casado (a)</label>
+                    <input type="radio" id="estado2" name="radioestado"><br>
+  
+                    <label for="estado3">Separado (a)</label>
+                    <input type="radio" id="estado3" name="radioestado"><br>
+  
+                    <label for="estado4">Divorciado (a)</label>
+                    <input type="radio" id="estado4" name="radioestado"><br>
+  
+                    <label for="estado5">Viúvo (a)</label>
+                    <input type="radio" id="estado5" name="radioestado"><br>
+                  </div>
+                  <br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="empresaondetrabalha">Empresa onde trabalha:</label><br>
+                  <input type="text" id="empresaondetrabalha"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="cargoprofissional">Cargo profissional:</label><br>
+                  <input type="text" id="cargoprofissional"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="rendamensal">Renda mensal:</label><br>
+                  <input type="text" id="rendamensal"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="bancos">Bancos nos quais possui relacionamentos:</label><br>
+                  <input type="text" id="bancos"><br><br><br>
+                </div>
+
+
+                <!-- Campo para pessoa física casada -->
+                <div id="margemcampos">
+                  <p>Dados 2* proponente (se casado, obrigatório):</p>
+                  <label for="nomecompleto">Nome completo:</label><br>
+                  <input type="text" id="nomecompleto"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="datadenascimento">Data de nascimento:</label><br>
+                  <input type="date" id="datadenascimento"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="cpf">CPF:</label><br>
+                  <input type="text" id="cpf"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="rg">RG:</label><br>
+                  <input type="text" id="rg"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="endereco">Endereço residencial:</label><br>
+                  <input type="text" id="endereco"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="telefone">Telefone:</label><br>
+                  <input type="text" id="telefone"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="email">E-mail:</label><br>
+                  <input type="text" id="email"><br>
+                </div>
+                
+                
+                <div id="margemcampos">
+                  <br>
+                  <label for="wrapperEstadoCivil">Estado civil:</label><br>
+                  <div class="wrapperEstadoCivil">
+                    <label for="estado1">Solteiro (a)</label>
+                    <input type="radio" id="estado1" name="radioestado"><br>
+                  
+                    <label for="estado2">Casado (a)</label>
+                    <input type="radio" id="estado2" name="radioestado"><br>
+  
+                    <label for="estado3">Separado (a)</label>
+                    <input type="radio" id="estado3" name="radioestado"><br>
+  
+                    <label for="estado4">Divorciado (a)</label>
+                    <input type="radio" id="estado4" name="radioestado"><br>
+  
+                    <label for="estado5">Viúvo (a)</label>
+                    <input type="radio" id="estado5" name="radioestado"><br>
+                  </div>
+                  <br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="empresaondetrabalha">Empresa onde trabalha:</label><br>
+                  <input type="text" id="empresaondetrabalha"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="cargoprofissional">Cargo profissional:</label><br>
+                  <input type="text" id="cargoprofissional"><br>
+                </div>  
+                
+                <div id="margemcampos">
+                  <label for="rendamensal">Renda mensal:</label><br>
+                  <input type="text" id="rendamensal"><br>
+                </div>
+                
+                <div id="margemcampos">
+                  <label for="bancos">Bancos nos quais possui relacionamentos:</label><br>
+                  <input type="text" id="bancos"><br><br><br>
+                </div>
+
+                <div id="margemcampos">
+                  <label for="valorimovel">Valor do imóvel em R$:</label><br>
+                  <input type="text" id="valorimovel"><br>
+                </div>
+
+                <div id="margemcampos">
+                  <label for="valorfinanciamento">Valor do financiamento pretendido em R$:</label><br>
+                  <input type="text" id="valorfinanciamento"><br>
+                </div>
+
+                <div id="margemcampos">
+                  <label for="prazo">Prazo: (até 35 anos)</label><br>
+                  <input type="text" id="prazo"><br>
+                </div>
+
+                <div id="margemcampos">
+                  <label for="wrapperincluirdespesas">Incluir despesas?</label><br>
+                  <div class="wrapperincluirdespesas">
+                    <input type="radio" id="radiodespesassim" name="radiodespesas">
+                    <label for="radiodespesassim">Sim</label>
+                    <input type="radio" id="radiodespesasnao" name="radiodespesas">
+                    <label for="radiodespesasnao">Não</label>
+                  </div>
+                </div>
+
+                <div id="margemcampos">
+                  <label for="wrapperfgts">Pretende utilizar FGTS?</label><br>
+                  <div class="wrapperfgts">
+                    <input type="radio" id="fgtssim" name="radiofgts">
+                    <label for="fgtssim">Sim</label>
+                    <input type="radio" id="fgtsnao" name="radiofgts">
+                    <label for="fgtsnao">Não</label>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            
+            <div class="botoesForm">
+              <input type="button" value="Anterior" id="formButtonAnt"></input>
+              <input type="button" value="Proximo" id="formButtonProx"></input>
+            </div>
+          </div>
       </div>
-
-
-
 
 
 
@@ -325,17 +616,32 @@
   <!---------------------------------------------------- FOOTER (DÉCIMA SEÇÃO) ------------------------------------------------>    
        <footer>
         <div class="esquerda">
-          <img src="./img/logo/logo negativo.svg">
+          <a href="#home"><img src="./img/logo/logo negativo.svg"></a>
           <p>CNPJ 52.346.782/0001-19</p>
         </div>
 
         <div class="direita">
-          <img src="./img/icones/iconeinstagram.svg">
-          <img src="./img/icones/iconewpp.svg">
-          <img src="./img/icones/iconeemail.svg">
+            <a href="https://www.instagram.com/conquistha_/"><img src="./img/icones/iconeinstagram.svg"></a>
+            <a href="https://wa.me/5516991224508"><img src="./img/icones/iconewpp.svg"></a>
+            <a class="mail" href="mailto:atendimento@conquistha.com.br"><img src="./img/icones/iconeemail.svg"> </a>      
         </div>
       </footer>
+    </div> 
 
-    </div>  
-   </body>
+
+
+
+  <!-------------------------------------------------- BOTÃO FLUTUANTE DO WHATSAPP ------------------------------------------->
+  <div class="botaowpp"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5516991224508" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+    </a>
+  </div>
+    
+
+
+
+    <script src="./js_form"></script>
+   </body> 
 </html>
