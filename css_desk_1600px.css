@@ -93,4 +93,8 @@
   #formButtonAnt {
     margin-bottom: 2rem;
   }
+
+  .botoes {
+    gap: 1.7rem;
+  }
 }

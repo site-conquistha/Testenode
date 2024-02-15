@@ -1,10 +1,139 @@
 const formButtonProx = document.querySelector("#formButtonProx");
 const formButtonAnt = document.querySelector("#formButtonAnt");
+const formButtonSubmit = document.querySelector("#formButtonSubmit");
 const radioImovel = document.querySelector("#radioimovel");
 const radioParceiro = document.querySelector("#radioparceiros");
 let step = 1
 let selecaoForm = 'imovel'
 document.querySelector("#formButtonAnt").classList.add('hidden')
+document.querySelector("#formButtonSubmit").classList.add('hidden')
+
+
+
+const estado1_1 = document.querySelector("#estado1_1")
+const estado2_1 = document.querySelector("#estado2_1")
+const estado3_1 = document.querySelector("#estado3_1")
+const estado4_1 = document.querySelector("#estado4_1")
+const estado5_1 = document.querySelector("#estado5_1")
+
+
+const radiodespesassim = document.querySelector("#radiodespesassim")
+const radiodespesasnao = document.querySelector("#radiodespesasnao")
+
+const radiofgtssim = document.querySelector("#fgtssim")
+const radiofgtsnao = document.querySelector("#fgtsnao")
+
+
+
+
+
+let radioestadocivil_1 = "Solteiro (a)"
+let radioestadocivil_2 = "Casado (a)"
+let radiodespesas = " "
+let radiofgts = " "
+
+
+let ramoimobiliario = ' '
+let nomecompleto = ' '
+let nomeempresa = ' '
+let cidade = ' '
+let email = ' '
+let whatsapp = ' '
+let body = ' '
+let body2 = ' '
+
+let nomecompleto_1 = ' '
+let datadenascimento_1 = ' '
+let cpf_1 = ' '
+let rg_1 = ' '
+let endereco_1 = ' '
+let telefone_1 = ' '
+let email_1 = ' '
+let estado_1 = ' '
+let empresaondetrabalha_1 = ' '
+let cargoprofissional_1 = ' '
+let rendamensal_1 = ' '
+let bancos_1 = ' '
+
+
+let nomecompleto_2 = ' '
+let datadenascimento_2 = ' '
+let cpf_2 = ' '
+let rg_2 = ' '
+let endereco_2 = ' '
+let telefone_2 = ' '
+let email_2 = ' '
+let estado_2 = ' '
+let empresaondetrabalha_2 = ' '
+let cargoprofissional_2 = ' '
+let rendamensal_2 = ' '
+let bancos_2 = ' '
+
+
+
+
+
+
+
+let valorimovel = ' '
+let valorfinanciamento = ' '
+let prazo = ' '
+
+
+
+
+
+
+
+
+
+
+estado1_1.addEventListener ('click', event => {
+    radioestadocivil_1 = "Solteiro (a)"
+})
+
+estado2_1.addEventListener ('click', event => {
+    radioestadocivil_1 = "Casado (a)"
+})
+
+estado3_1.addEventListener ('click', event => {
+    radioestadocivil_1 = "Separado (a)"
+})
+
+estado4_1.addEventListener ('click', event => {
+    radioestadocivil_1 = "Divorciado (a)"
+})
+
+estado5_1.addEventListener ('click', event => {
+    radioestadocivil_1 = "Viúvo (a)"
+})
+
+
+
+
+radiodespesassim.addEventListener ('click', event => {
+    radiodespesas = "Sim"
+})
+
+radiodespesasnao.addEventListener ('click', event => {
+    radiodespesas = "Não"
+})
+
+
+radiofgtssim.addEventListener ('click', event => {
+    radiofgts = "Sim"
+})
+
+radiofgtsnao.addEventListener ('click', event => {
+    radiofgts = "Não"
+})
+
+
+
+
+
+
+
 
 
 radioImovel.addEventListener('click', event => {
@@ -27,6 +156,7 @@ formButtonProx.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.add('hidden')
     document.querySelector("#formButtonProx").classList.remove('hidden')
     document.querySelector('#selecioneuma').classList.remove('hidden')
+    document.querySelector("#formButtonSubmit").classList.add('hidden')
   } else if ((step == 2) && (selecaoForm == 'parceiro')) {
     document.querySelector('#passo1').classList.add('hidden')
     document.querySelector('#passoParceiro').classList.remove('hidden')
@@ -34,6 +164,7 @@ formButtonProx.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.remove('hidden')
     document.querySelector("#formButtonProx").classList.add('hidden')
     document.querySelector('#selecioneuma').classList.add('hidden')
+    document.querySelector("#formButtonSubmit").classList.remove('hidden')
   } else if ((step == 2) && (selecaoForm == 'imovel')) {
     document.querySelector('#passo1').classList.add('hidden')
     document.querySelector('#passoParceiro').classList.add('hidden')
@@ -41,6 +172,7 @@ formButtonProx.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.remove('hidden')
     document.querySelector("#formButtonProx").classList.add('hidden')
     document.querySelector('#selecioneuma').classList.add('hidden')
+    document.querySelector("#formButtonSubmit").classList.remove('hidden')
   }
 })
 
@@ -54,6 +186,7 @@ formButtonAnt.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.add('hidden')
     document.querySelector("#formButtonProx").classList.remove('hidden')
     document.querySelector('#selecioneuma').classList.remove('hidden')
+    document.querySelector("#formButtonSubmit").classList.add('hidden')
   } else if ((step == 2) && (selecaoForm == 'parceiro')) {
     document.querySelector('#passo1').classList.add('hidden')
     document.querySelector('#passoParceiro').classList.remove('hidden')
@@ -61,6 +194,7 @@ formButtonAnt.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.remove('hidden')
     document.querySelector("#formButtonProx").classList.add('hidden')
     document.querySelector('#selecioneuma').classList.add('hidden')
+    document.querySelector("#formButtonSubmit").classList.remove('hidden')
   } else if ((step == 2) && (selecaoForm == 'imovel')) {
     document.querySelector('#passo1').classList.add('hidden')
     document.querySelector('#passoParceiro').classList.add('hidden')
@@ -68,5 +202,91 @@ formButtonAnt.addEventListener('click', event => {
     document.querySelector("#formButtonAnt").classList.remove('hidden')
     document.querySelector("#formButtonProx").classList.add('hidden')
     document.querySelector('#selecioneuma').classList.add('hidden')
+    document.querySelector("#formButtonSubmit").classList.remove('hidden')
   }
 })
+
+
+
+
+
+
+
+
+
+
+
+
+formButtonSubmit.addEventListener('click', event => {
+  event.preventDefault();
+
+  if((step == 2) && (selecaoForm == 'parceiro')) {
+    ramoimobiliario = document.querySelector("#ramoimobiliario")
+    nomecompleto = document.querySelector("#nomecompleto")
+    nomeempresa = document.querySelector("#nomeempresa")
+    cidade = document.querySelector("#cidade")
+    email = document.querySelector("#email")
+    whatsapp = document.querySelector("#whatsapp")
+    
+    body = "Respostas do formulário: \n\n\n Quero ser um parceiro! \n\n\n - Ramo imobiliário: " + ramoimobiliario.value + "\n\n - Nome completo: " + nomecompleto.value + "\n\n - Nome da empresa: " + nomeempresa.value + "\n\n - Cidade: " + cidade.value + "\n\n - Email: " + email.value + "\n\n - Whatsapp: " + whatsapp.value + ""
+    
+    console.log(body)
+
+
+
+
+
+  } else if ((step == 2) && (selecaoForm == 'imovel')){
+    nomecompleto_1 = document.querySelector("#nomecompleto_1")
+    datadenascimento_1 = document.querySelector("#datadenascimento_1")
+    cpf_1 = document.querySelector("#cpf_1")
+    rg_1 = document.querySelector("#rg_1")
+    endereco_1 = document.querySelector("#endereco_1")
+    telefone_1 = document.querySelector("#telefone_1")
+    email_1 = document.querySelector("#email_1")
+    empresaondetrabalha_1 = document.querySelector("#empresaondetrabalha_1")
+    cargoprofissional_1 = document.querySelector("#cargoprofissional_1")
+    rendamensal_1 = document.querySelector("#rendamensal_1")
+    bancos_1 = document.querySelector("#bancos_1")
+
+    nomecompleto_2 = document.querySelector("#nomecompleto_2")
+    datadenascimento_2 = document.querySelector("#datadenascimento_2")
+    cpf_2 = document.querySelector("#cpf_2")
+    rg_2 = document.querySelector("#rg_2")
+    endereco_2 = document.querySelector("#endereco_2")
+    telefone_2 = document.querySelector("#telefone_2")
+    email_2 = document.querySelector("#email_2")
+    empresaondetrabalha_2 = document.querySelector("#empresaondetrabalha_2")
+    cargoprofissional_2 = document.querySelector("#cargoprofissional_2")
+    rendamensal_2 = document.querySelector("#rendamensal_2")
+    bancos_2 = document.querySelector("#bancos_2")
+
+
+
+
+
+
+    valorimovel = document.querySelector("#valorimovel")
+    valorfinanciamento = document.querySelector("#valorfinanciamento")
+    prazo = document.querySelector("#prazo")
+
+
+    body = "Respostas do formulário: \n\n\n Quero comprar um imóvel! \n\n\n Dados 1* proponente: \n\n\n - Nome completo: " + nomecompleto_1.value + "\n\n - Data nascimento: " + datadenascimento_1.value + "\n\n - CPF: " + cpf_1.value + "\n\n - RG: " + rg_1.value + "\n\n - Endereço: " + endereco_1.value + "\n\n - Telefone: " + telefone_1.value + "\n\n - E-mail: " + email_1.value + "\n\n - Estado civil: " + radioestadocivil_1 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_1.value + "\n\n - Cargo profissional: " + cargoprofissional_1.value + "\n\n - Renda mensal: " + rendamensal_1.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_1.value + "\n\n\n Valor do imóvel: " + valorimovel.value + "\n\n Valor do financiamento: " + valorfinanciamento.value + "\n\n Prazo: " + prazo.value + "\n\n Incluir despesas? " + radiodespesas + "\n\n Pretende utilizar FGTS? " + radiofgts + ""
+
+
+    console.log(body)
+
+
+    if (radioestadocivil_1 == "Casado (a)") {
+      body2 = "Respostas do formulário: \n\n\n Quero comprar um imóvel! \n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
+
+      console.log(body2)
+    }
+  }
+
+  
+
+}) 
+
+
+

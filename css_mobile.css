@@ -694,13 +694,13 @@
     background-color: #FFB000;
   }
 
-  .wrapperEstadoCivil #estado1, #estado2, #estado3, #estado4, #estado5{
+  .wrapperEstadoCivil #estado1_1, #estado2_1, #estado3_1, #estado4_1, #estado5_1, #estado1_2, #estado2_2, #estado3_2, #estado4_2, #estado5_2{
     border: 1px solid #FFB000;
     padding: 0.5em;
     -webkit-appearance: none;
   }
 
-  .wrapperEstadoCivil #estado1:checked, #estado2:checked, #estado3:checked, #estado4:checked, #estado5:checked{
+  .wrapperEstadoCivil #estado1_1:checked, #estado2_1:checked, #estado3_1:checked, #estado4_1:checked, #estado5_1:checked, #estado1_2:checked, #estado2_2:checked, #estado3_2:checked, #estado4_2:checked, #estado5_2:checked{
     background-color: #FFB000;
   }
 
@@ -708,7 +708,7 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    margin-top: 5vw;
+    margin-top: 9vw;
   }
 
   .formulario .botoesForm #formButtonProx{
@@ -722,7 +722,7 @@
 
   .formulario .botoesForm #formButtonAnt{
     color: white;
-    background-color: #FFB000;
+    background-color: #838891;
     padding: 3.5vw 35vw;
     border: none;
     font-size: 4vw;
@@ -791,6 +791,23 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+  }
+
+
+  .formulario .botaoEnviarForm {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vw;
+  }
+
+  .formulario .botaoEnviarForm #formButtonSubmit{
+    color: white;
+    background-color: #FFB000;
+    padding: 3.5vw 28vw;
+    border: none;
+    font-size: 4vw;
+    font-family: "Lato";
   }
 }
 
