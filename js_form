@@ -41,6 +41,7 @@ let email = ' '
 let whatsapp = ' '
 let body = ' '
 let body2 = ' '
+let body_imovel = ' '
 
 let nomecompleto_1 = ' '
 let datadenascimento_1 = ' '
@@ -271,16 +272,17 @@ formButtonSubmit.addEventListener('click', event => {
     prazo = document.querySelector("#prazo")
 
 
-    body = "Respostas do formulário: \n\n\n Quero comprar um imóvel! \n\n\n Dados 1* proponente: \n\n\n - Nome completo: " + nomecompleto_1.value + "\n\n - Data nascimento: " + datadenascimento_1.value + "\n\n - CPF: " + cpf_1.value + "\n\n - RG: " + rg_1.value + "\n\n - Endereço: " + endereco_1.value + "\n\n - Telefone: " + telefone_1.value + "\n\n - E-mail: " + email_1.value + "\n\n - Estado civil: " + radioestadocivil_1 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_1.value + "\n\n - Cargo profissional: " + cargoprofissional_1.value + "\n\n - Renda mensal: " + rendamensal_1.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_1.value + "\n\n\n Valor do imóvel: " + valorimovel.value + "\n\n Valor do financiamento: " + valorfinanciamento.value + "\n\n Prazo: " + prazo.value + "\n\n Incluir despesas? " + radiodespesas + "\n\n Pretende utilizar FGTS? " + radiofgts + ""
-
-
-    console.log(body)
+    body = "Respostas do formulário: \n\n Quero comprar um imóvel! \n\n\n\n Dados 1* proponente: \n\n\n - Nome completo: " + nomecompleto_1.value + "\n\n - Data nascimento: " + datadenascimento_1.value + "\n\n - CPF: " + cpf_1.value + "\n\n - RG: " + rg_1.value + "\n\n - Endereço: " + endereco_1.value + "\n\n - Telefone: " + telefone_1.value + "\n\n - E-mail: " + email_1.value + "\n\n - Estado civil: " + radioestadocivil_1 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_1.value + "\n\n - Cargo profissional: " + cargoprofissional_1.value + "\n\n - Renda mensal: " + rendamensal_1.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_1.value + "" 
+    
+    body_imovel = "\n\n\n\n Dados do imóvel: \n\n\n - Valor do imóvel: " + valorimovel.value + " R$\n\n - Valor do financiamento: " + valorfinanciamento.value + " R$\n\n - Prazo: " + prazo.value + "\n\n - Incluir despesas: " + radiodespesas + "\n\n - Pretende utilizar FGTS: " + radiofgts + ""
 
 
     if (radioestadocivil_1 == "Casado (a)") {
-      body2 = "Respostas do formulário: \n\n\n Quero comprar um imóvel! \n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
+      body2 = "\n\n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
 
-      console.log(body2)
+      console.log(body + body2 + body_imovel)
+    } else {
+      console.log(body + body_imovel)
     }
   }
 
