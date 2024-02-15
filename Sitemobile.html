@@ -6,8 +6,10 @@
 		<meta name="author" content="Vítor Bernardo Sarmet">
 		<meta name="description" content="Alterar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"/>
-    <link rel="stylesheet" type="text/css" href="css_desk.css">
-		<link rel="stylesheet" type="text/css" href="css_mobile.css">
+    <link rel="stylesheet" type="text/css" href="css_desk_950px.css">
+    <link rel="stylesheet" type="text/css" href="css_desk_1150px.css">
+    <link rel="stylesheet" type="text/css" href="css_desk_1350px.css">
+    <link rel="stylesheet" type="text/css" href="css_desk_1600px.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -27,14 +29,14 @@
 
         <nav id="navbar">
               <div class="nav-wrapper">
-                <div class="logo_desk">
+                <div class="logo_desk" id="home">
                   <img src="./img/logo/LOGO HORIZONTAL.svg">
                 </div>
   
                 <ul>
                   <li><a href="#quemsomos">QUEM SOMOS</a></li>
                   <li><a href="#servicos">SERVIÇOS</a></li>
-                  <li><a href="#contatos">PARCEIROS</a></li>
+                  <li><a href="#parceiros">PARCEIROS</a></li>
                   <li><a href="#diferenciais">DIFERENCIAIS</a></li>
                   <li><a href="#bancos">BANCOS</a></li>
                   <li><a href="#simulador">SIMULADOR DE CRÉDITO</a></li>
@@ -51,8 +53,8 @@
             </div>
 
             <div class="imagensbanner_desk">
-              <img src="./img/pessoas/casal_desk.webp">
-              <img src="./img/icones/iconeconquistha.svg">
+                <img id="img1" src="./img/pessoas/casal_desk.webp">
+                <img id="img2" src="./img/icones/iconeconquistha.svg"> 
             </div>
 
             <div class="textobanner">
@@ -74,7 +76,7 @@
   <!---------------------------------------------------- SEGUNDA SEÇÃO ------------------------------------------------>
         <div class="segundasection">
           <div class="logosegunda">
-            <img  src="./img/logo/LOGO HORIZONTAL.svg">
+            <img id="quemsomos" src="./img/logo/LOGO HORIZONTAL.svg">
           </div>
             
           <div class="textosegundasection">
@@ -85,20 +87,19 @@
         
   
   <!---------------------------------------------------- TERCEIRA SEÇÃO ------------------------------------------------>
-        <div class="containerterceira">
+        <div class="containerterceira" id="servicos">
           <div class="terceirasection">
-
-            <div id="caixas">
+            <div id="caixas_mobile">
               <div class="caixae">
-                <img src="./img/caixas/caixa esquerda.png">
+                <img src="./img/caixas/caixa esquerda_mobile.png">
               </div>
   
               <div class="caixad">
-                <img src="./img/caixas/caixa direita.png">
+                <img src="./img/caixas/caixa direita_mobile.png">
               </div>
             </div>
 
-            
+
             <div class="textosterceira">
               <div id="wrappertextosterceira_web">
                 <div class="contecom">
@@ -119,21 +120,41 @@
                   <a href="https://wa.me/5516991224508?text=Olá, quero contratar um dos serviços!"><button type="button">Quero contratar um dos serviços</button></a>
                 </div>
               </div>
-  
-              
             </div>
-              
-            
-            
-            
           </div>
         </div>
         
+  <!---------------------------------------------------- PARCEIROS (NOVA QUARTA SEÇÃO) ------------------------------------------------>      
+        <div id="parceiros">
+          <div class="textocimaparceiros">
+            <p>Corretor autônomo</p>
+            <p>Imobiliária</p>
+            <p>Incorporadoras</p>
+          </div>
+          
+          <div class="textosparceiros">
+            <div class="textogrande">
+              <p>Seja parceiro, tenha um atendimento completo na experiência de compra de seus clientes e <span>acelere seus negócios.</span></p>
+            </div>
+            
+            <div class="textopequeno">
+              <p>Ofereça ao seu cliente suporte e atendimento em todas as etapas referente ao processo de compra e financiamento. 
+                Centralizando assim em um único lugar a experiência e satisfação do cliente.
+              </p>
+            </div>  
+          </div>
+
+          <div class="serparceiro">
+            <a href="#formselecione"><button type="button">Quero ser um parceiro!</button></a>
+          </div>
+        </div>
         
-       
-        
+
+
+
+
   <!---------------------------------------------------- QUARTA SEÇÃO ------------------------------------------------>
-        <div class="quartasection">
+        <div class="quartasection" id="diferenciais">
           <div class="textosquarta">
 
             <div class="decidir">
@@ -162,33 +183,41 @@
         
   <!---------------------------------------------------- QUINTA SEÇÃO ------------------------------------------------>      
         <div class="quintasection">
-          <div class="textoquinta">
-            <p>Que a tranquilidade de conquistar seu sonho, <span>seja a nossa Conquistha em lhe atender bem</span></p>
-          </div>
-          
-          <div class="faleconosco">
-            <a href="https://wa.me/5516991224508"><button type="button">Fale conosco</button></a>
-          </div>
-          
+          <div class="wrappertextoquinta">
+            <div class="textoquinta">
+              <p>Que a tranquilidade de conquistar seu sonho, <span>seja a nossa Conquistha em lhe atender bem</span></p>
+            </div>
+
+              <div class="faleconosco">
+                <a href="https://wa.me/5516991224508"><button type="button">Fale conosco</button></a>
+              </div>
+  
+              <div class="falecomumdenossos">
+                <a href="https://wa.me/5516991224508"><button type="button">Fale com um de nossos atendentes</button></a>
+              </div>
+          </div>   
         </div>
         
 
 
   <!---------------------------------------------------- BANCOS PARCEIROS (SEXTA SEÇÃO) ------------------------------------------------>      
-        <div class="bancosparceiros">
-          <p>Bancos  <span>parceiros</span></p>
-  
+        <div class="bancosparceiros" id="bancos">
+          <div class="textobancos">
+            <p>Bancos  <span>parceiros</span></p>
+          </div>
+          
+          <div class="todosbancos">
             <div class="primeirafileira">
               <div class="itau">
                 <img src="./img/bancos/Itau.png">
               </div>
 
-              <div class="caixa">
-                <img src="./img/bancos/Caixa.png">
-              </div>
-
               <div class="bradesco">
                 <img src="./img/bancos/Bradesco.png">
+              </div>
+
+              <div class="caixa">
+                <img src="./img/bancos/Caixa.png">
               </div>
             </div>
 
@@ -205,13 +234,15 @@
                 <img src="./img/bancos/BRB.png">
               </div>
             </div>
+          </div>
+            
         </div>
 
 
 
   <!---------------------------------------------------- SIMULADOR DE CRÉDITO (SÉTIMA SEÇÃO) ------------------------------------------------>      
         <div class="simuladordecredito">
-          <div class="textosimulador">
+          <div class="textosimulador" id="simulador">
             <p>Realize sua simulação agora mesmo!</p>
           </div>
 
@@ -332,12 +363,19 @@
           </div>
           
           <div id="wrapperespecialistas">
-            <div class="especialistas">
+            <div class="especialistas_mobile">
               <p>Preencha os dados no formulário abaixo e <span>obtenha rapidamente um retorno de um de nossos especialistas!</span></p>
+            </div>
+
+            <div class="especialistas_desk">
+              <p>Preencha os dados no formulário ao lado e <span>obtenha rapidamente um retorno de um de nossos especialistas!</span></p>
             </div>
           </div> 
         </div>
 
+        <div class="fundoform">
+          <img src="./img/fundos/fundo_form.png">
+        </div>
 
         
           <!-- Formulário de fato -->
@@ -360,10 +398,7 @@
               </div><br>
             </div>
             
-            
-
-
-
+          
             <div class="wrapperparceiro">
               <div id="passoParceiro" class="hidden">
                 <div id="margemcampos">
@@ -399,9 +434,6 @@
             </div>
             
             
-
-
-
             <div class="wrapperpf">
               <div id="passoPessoaFisica" class="hidden">
                 <div id="margemcampos">
@@ -604,7 +636,7 @@
             
             <div class="botoesForm">
               <input type="button" value="Anterior" id="formButtonAnt"></input>
-              <input type="button" value="Proximo" id="formButtonProx"></input>
+              <input type="button" value="Proximo" id="formButtonProx"></input> 
             </div>
           </div>
       </div>

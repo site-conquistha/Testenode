@@ -1,0 +1,96 @@
+@media screen and (min-width: 1500px){
+  .textobanner p{
+    position: relative;
+    right: 4rem;
+  }
+
+  .falecomagente button{
+    position: relative;
+    right: 3rem;
+  }
+}
+
+
+@media screen and (min-width: 1500px){
+  .textosegundasection {
+    display: flex;
+    width: 17rem;
+    justify-content: center;
+    float: right;
+    position: relative;
+    bottom: 11.5rem;
+    right: 17rem;
+  }
+  
+  .logosegunda img{
+    width: 30rem;
+    position: relative;
+    bottom: 13.5rem;
+    left: 14rem;
+  }
+
+  .segundasection {
+    height: 6rem;
+  }
+}
+
+
+@media screen and (min-width: 1500px){
+  .quintasection {
+    background-image: url("./img/pessoas/crianca_desk.webp");
+    background-size: cover;
+    height: 40rem;
+    position: relative;
+    bottom: 7rem;
+  }
+
+  .wrappertextoquinta {
+    position: relative;
+    top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1500px) { /*Essa versão ta ok*/
+  .fundoform {
+    display: none;
+    position: absolute;
+    left: 48.6rem;
+    margin-top: 5.3rem;
+  }
+
+  .formulario {
+    position: relative;
+    right: 10rem;
+    background-image: url("./img/fundos/fundo_form.png");
+    height: 27rem;
+    width: 27rem;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+  }
+
+  #passoPessoaFisica{
+    position: relative;
+    right: 12rem;
+    padding-left: 12rem;
+    margin-top: -6rem;
+  }
+
+  #passoParceiro{
+    position: relative;
+    bottom: 5rem;
+    right: 2rem;
+    padding-left: 2rem;
+  }
+
+  #margemcampos p {
+    max-width: 30rem;
+  }
+
+  #margemcampos {
+    font-size: 1rem;
+  }
+
+  #formButtonAnt {
+    margin-bottom: 2rem;
+  }
+}

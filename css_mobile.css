@@ -110,6 +110,8 @@
     width: 100vw;
     display: flex;
     justify-content: center;
+    position: relative;
+    left: 4.5vw;
   }
   
   .segundasection .logosegunda{
@@ -189,7 +191,13 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 5vw;
+    padding-bottom: 2vw;
+    position: relative;
+    top: 7vw;
+  }
+
+  #caixas_desk {
+    display: none;
   }
 
   .terceirasection .caixae {
@@ -215,6 +223,81 @@
     margin-bottom: -30vw;
   }
 }
+
+/* --------------------------- PARCEIROS (NOVA QUARTA SEÇÃO) --------------------------------------*/
+@media screen and (max-width: 481px){
+  #parceiros {
+    background-image: url("./img/pessoas/parceiro_mobile.webp");
+    background-size: cover;
+    height: 100vw;
+  }
+
+  .textocimaparceiros {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 3vw;
+    font-weight: bold;
+    position: relative;
+    top: 6vw;
+  }
+
+  .textocimaparceiros p {
+    color: #FFC700;
+  }
+
+  .textosparceiros {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8vw;
+  }
+
+  .textogrande, .textopequeno{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+
+  .textogrande p {
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    width: 95vw;
+  }
+
+  .textogrande span {
+    font-weight: bold;
+  }
+
+  .textopequeno {
+    position: relative;
+    bottom: 2vw;
+  }
+
+  .textopequeno p{
+    font-size: 3.5vw;
+    color: white;
+    font-weight: light;
+    width: 80vw;
+    text-align: center;
+  }
+
+  .serparceiro {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 4vw;
+  }  
+}
+
+
+
+
+
+
 
 
 
@@ -284,6 +367,8 @@
     background-image: url("./img/pessoas/crianca_mobile.webp");
     background-size: 100vw;
     height: 56vw;
+    position: relative;
+    bottom: 1vw;
   }
 
   .quintasection .textoquinta {
@@ -304,6 +389,10 @@
 
   .quintasection .faleconosco {
     margin-left: 7.5vw;
+  }
+
+  .quintasection .falecomumdenossos {
+    display: none;
   }
 }
 
@@ -417,12 +506,11 @@
     font-weight: bold;
     color: #838891;
     margin-top: 14vw;
-    padding-bottom: 5vw;
+    padding-bottom: 3vw;
   }
 
   .menusanfonado {
     list-style-type: none;
-    border-radius: 0;
     background: #666;
     margin-bottom: 15vw;
     margin-top: 10vw;
@@ -436,35 +524,24 @@
     font-size: 4vw;
     background: #ffb000;
   }
- 
-  .nav-item:last-child {
-    border-bottom: none;
-  }
- 
- .nav-item .nav-link .imagemseta img{
-  margin-top: 1vw;
-  margin-left: 80vw;
-  }
 
   .nav-item .nav-link .imagemx{
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 81.4vw;
-    padding-bottom: 3vw;
+    position: relative;
+    right: 1.4vw;
   }
 
-  .nav-link, .nav-submenu-link { /*OK*/
+  .nav-link {
+    display: flex;
     text-decoration: none;
-    padding-top: 3vw;
-    padding-left: 5vw;
-    padding-right: 15vw;
-    display: block;
     color: #fff;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+    align-items: flex-end;
   }
  
   .nav-item .nav-submenu {
     color: grey;
-    padding: 0.5vw 0vw; 
+    padding: 1.2vw 0vw; 
   }
 
   .nav-item .nav-submenu ul li{
@@ -482,12 +559,6 @@
   .nav-submenu:target {
     max-height: 90vw;
   }
-
-  .nav-submenu-link {
-    font-size: 4vw;
-    background: transparent;
-    transition: background 0.2s ease-in;
-  }
 }
 
 
@@ -501,6 +572,7 @@
 
   .formularioGeral .textoformulario {
     background-image: url("./img/pessoas/familia_mobile.webp");
+    background-size: cover;
     height: 110vw;
     padding-top: 10vw;
     padding-bottom: 10vw;
@@ -522,15 +594,23 @@
     font-weight: bold;
   }
 
-  .formularioGeral .textoformulario .especialistas p{
+  .especialistas_desk {
+    display: none;
+  }
+
+  .formularioGeral .textoformulario .especialistas_mobile p{
     font-size: 4vw;
     margin-left: 10vw;
     margin-right: 5vw;
     margin-top: -3vw;
   }
 
-  .formularioGeral .textoformulario .especialistas p span{
+  .formularioGeral .textoformulario .especialistas_mobile p span{
     font-weight: bold;
+  }
+
+  .fundoform {
+    display: none;
   }
 
   .formulario #formselecione {
@@ -668,6 +748,15 @@
     margin-top: 2vw;
   }
 
+  #margemcampos p{
+    font-weight: bold;
+    max-width: 90vw;
+  }
+
+  #margemcampos input[type=text], input[type=date]{
+    width: 60vw;
+  }
+
   .wrapperincluirdespesas #radiodespesassim:checked, #radiodespesasnao:checked{
     background-color: #FFB000;
   }
@@ -698,12 +787,6 @@
     justify-content: center;
   }
 
-  #wrapperrealize {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-  }
-
   #wrapperespecialistas {
     width: 100vw;
     display: flex;
@@ -718,7 +801,7 @@
   footer {
     width: 100vw;
     height: 55vw;
-    background-image: linear-gradient(to right, #FF8500 , #E65202);
+    background-color: #E65202;
   }
 
   footer .esquerda {
@@ -738,7 +821,7 @@
 
   footer .direita {
     float: right;
-    margin-right: 4vw;
+    margin-right: 3vw;
     margin-top: 12vw;
   }
   
@@ -747,7 +830,9 @@
   }
 
   footer .direita .mail img{
-    width: 9vw;
+    width: 7.8vw;
+    position: relative;
+    top: 0.5vw;
   }
 }
 
