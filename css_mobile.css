@@ -847,9 +847,8 @@
   }
 
   footer .direita .mail img{
-    width: 7.8vw;
     position: relative;
-    top: 0.5vw;
+    top: 1vw;
   }
 }
 
