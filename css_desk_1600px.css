@@ -1,5 +1,5 @@
 @media screen and (min-width: 1500px){
-  .textobanner p{
+  .textobanner_desk p{
     position: relative;
     right: 4rem;
   }
@@ -7,6 +7,11 @@
   .falecomagente button{
     position: relative;
     right: 3rem;
+  }
+
+  .logo_desk {
+    position: relative;
+    left: 6rem;
   }
 }
 
@@ -18,20 +23,21 @@
     justify-content: center;
     float: right;
     position: relative;
-    bottom: 11.5rem;
-    right: 17rem;
+    bottom: 12rem;
+    right: 23rem;
   }
   
   .logosegunda img{
     width: 30rem;
     position: relative;
-    bottom: 13.5rem;
-    left: 14rem;
+    bottom: 13rem;
+    left: 17rem;
   }
 
   .segundasection {
     height: 6rem;
   }
+
 }
 
 
@@ -39,16 +45,35 @@
   .quintasection {
     background-image: url("./img/pessoas/crianca_desk.webp");
     background-size: cover;
-    height: 40rem;
+    height: 50rem;
     position: relative;
     bottom: 7rem;
   }
 
   .wrappertextoquinta {
     position: relative;
-    top: 5rem;
+    top: 10rem;
+  }
+
+  .textosimulador_grande {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .textosimulador {
+    display: none;
+  }
+
+  .textomenusanfonado_mobile {
+    display: none;
   }
 }
+
+
 
 @media screen and (min-width: 1500px) { /*Essa versão ta ok*/
   .fundoform {
@@ -96,5 +121,20 @@
 
   .botoes {
     gap: 1.7rem;
+  }
+
+  .iframe_desk {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .iframe_desk iframe{
+    width: 60rem;
+    height: 34rem;
+  }
+
+  .simuladordecredito {
+    height: 50rem;
   }
 }

@@ -10,6 +10,9 @@ document.querySelector("#formButtonSubmit").classList.add('hidden')
 
 
 
+
+
+
 const estado1_1 = document.querySelector("#estado1_1")
 const estado2_1 = document.querySelector("#estado2_1")
 const estado3_1 = document.querySelector("#estado3_1")
@@ -221,70 +224,70 @@ formButtonAnt.addEventListener('click', event => {
 formButtonSubmit.addEventListener('click', event => {
   event.preventDefault();
 
-  if((step == 2) && (selecaoForm == 'parceiro')) {
-    ramoimobiliario = document.querySelector("#ramoimobiliario")
-    nomecompleto = document.querySelector("#nomecompleto")
-    nomeempresa = document.querySelector("#nomeempresa")
-    cidade = document.querySelector("#cidade")
-    email = document.querySelector("#email")
-    whatsapp = document.querySelector("#whatsapp")
+  
+
+
+   if((step == 2) && (selecaoForm == 'parceiro')) {
+     ramoimobiliario = document.querySelector("#ramoimobiliario")
+     nomecompleto = document.querySelector("#nomecompleto")
+     nomeempresa = document.querySelector("#nomeempresa")
+     cidade = document.querySelector("#cidade")
+     email = document.querySelector("#email")
+     whatsapp = document.querySelector("#whatsapp")
     
-    body = "Respostas do formulário: \n\n\n Quero ser um parceiro! \n\n\n - Ramo imobiliário: " + ramoimobiliario.value + "\n\n - Nome completo: " + nomecompleto.value + "\n\n - Nome da empresa: " + nomeempresa.value + "\n\n - Cidade: " + cidade.value + "\n\n - Email: " + email.value + "\n\n - Whatsapp: " + whatsapp.value + ""
+     body = "Respostas do formulário: \n\n\n Quero ser um parceiro! \n\n\n - Ramo imobiliário: " + ramoimobiliario.value + "\n\n - Nome completo: " + nomecompleto.value + "\n\n - Nome da empresa: " + nomeempresa.value + "\n\n - Cidade: " + cidade.value + "\n\n - Email: " + email.value + "\n\n - Whatsapp: " + whatsapp.value + ""
     
-    console.log(body)
+     console.log(body)
 
 
+   } else if ((step == 2) && (selecaoForm == 'imovel')){
+     nomecompleto_1 = document.querySelector("#nomecompleto_1")
+     datadenascimento_1 = document.querySelector("#datadenascimento_1")
+     cpf_1 = document.querySelector("#cpf_1")
+     rg_1 = document.querySelector("#rg_1")
+     endereco_1 = document.querySelector("#endereco_1")
+     telefone_1 = document.querySelector("#telefone_1")
+     email_1 = document.querySelector("#email_1")
+     empresaondetrabalha_1 = document.querySelector("#empresaondetrabalha_1")
+     cargoprofissional_1 = document.querySelector("#cargoprofissional_1")
+     rendamensal_1 = document.querySelector("#rendamensal_1")
+     bancos_1 = document.querySelector("#bancos_1")
 
-
-
-  } else if ((step == 2) && (selecaoForm == 'imovel')){
-    nomecompleto_1 = document.querySelector("#nomecompleto_1")
-    datadenascimento_1 = document.querySelector("#datadenascimento_1")
-    cpf_1 = document.querySelector("#cpf_1")
-    rg_1 = document.querySelector("#rg_1")
-    endereco_1 = document.querySelector("#endereco_1")
-    telefone_1 = document.querySelector("#telefone_1")
-    email_1 = document.querySelector("#email_1")
-    empresaondetrabalha_1 = document.querySelector("#empresaondetrabalha_1")
-    cargoprofissional_1 = document.querySelector("#cargoprofissional_1")
-    rendamensal_1 = document.querySelector("#rendamensal_1")
-    bancos_1 = document.querySelector("#bancos_1")
-
-    nomecompleto_2 = document.querySelector("#nomecompleto_2")
-    datadenascimento_2 = document.querySelector("#datadenascimento_2")
-    cpf_2 = document.querySelector("#cpf_2")
-    rg_2 = document.querySelector("#rg_2")
-    endereco_2 = document.querySelector("#endereco_2")
-    telefone_2 = document.querySelector("#telefone_2")
-    email_2 = document.querySelector("#email_2")
-    empresaondetrabalha_2 = document.querySelector("#empresaondetrabalha_2")
-    cargoprofissional_2 = document.querySelector("#cargoprofissional_2")
-    rendamensal_2 = document.querySelector("#rendamensal_2")
-    bancos_2 = document.querySelector("#bancos_2")
+     nomecompleto_2 = document.querySelector("#nomecompleto_2")
+     datadenascimento_2 = document.querySelector("#datadenascimento_2")
+     cpf_2 = document.querySelector("#cpf_2")
+     rg_2 = document.querySelector("#rg_2")
+     endereco_2 = document.querySelector("#endereco_2")
+     telefone_2 = document.querySelector("#telefone_2")
+     email_2 = document.querySelector("#email_2")
+     empresaondetrabalha_2 = document.querySelector("#empresaondetrabalha_2")
+     cargoprofissional_2 = document.querySelector("#cargoprofissional_2")
+     rendamensal_2 = document.querySelector("#rendamensal_2")
+     bancos_2 = document.querySelector("#bancos_2")
 
 
 
 
 
 
-    valorimovel = document.querySelector("#valorimovel")
-    valorfinanciamento = document.querySelector("#valorfinanciamento")
-    prazo = document.querySelector("#prazo")
+     valorimovel = document.querySelector("#valorimovel")
+     valorfinanciamento = document.querySelector("#valorfinanciamento")
+     prazo = document.querySelector("#prazo")
 
 
-    body = "Respostas do formulário: \n\n Quero comprar um imóvel! \n\n\n\n Dados 1* proponente: \n\n\n - Nome completo: " + nomecompleto_1.value + "\n\n - Data nascimento: " + datadenascimento_1.value + "\n\n - CPF: " + cpf_1.value + "\n\n - RG: " + rg_1.value + "\n\n - Endereço: " + endereco_1.value + "\n\n - Telefone: " + telefone_1.value + "\n\n - E-mail: " + email_1.value + "\n\n - Estado civil: " + radioestadocivil_1 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_1.value + "\n\n - Cargo profissional: " + cargoprofissional_1.value + "\n\n - Renda mensal: " + rendamensal_1.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_1.value + "" 
+     body = "Respostas do formulário: \n\n Quero solicitar um financiamento! \n\n\n\n Dados 1* proponente: \n\n\n - Nome completo: " + nomecompleto_1.value + "\n\n - Data nascimento: " + datadenascimento_1.value + "\n\n - CPF: " + cpf_1.value + "\n\n - RG: " + rg_1.value + "\n\n - Endereço: " + endereco_1.value + "\n\n - Telefone: " + telefone_1.value + "\n\n - E-mail: " + email_1.value + "\n\n - Estado civil: " + radioestadocivil_1 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_1.value + "\n\n - Cargo profissional: " + cargoprofissional_1.value + "\n\n - Renda mensal: " + rendamensal_1.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_1.value + "" 
     
-    body_imovel = "\n\n\n\n Dados do imóvel: \n\n\n - Valor do imóvel: " + valorimovel.value + " R$\n\n - Valor do financiamento: " + valorfinanciamento.value + " R$\n\n - Prazo: " + prazo.value + "\n\n - Incluir despesas: " + radiodespesas + "\n\n - Pretende utilizar FGTS: " + radiofgts + ""
+     body_imovel = "\n\n\n\n Dados do imóvel: \n\n\n - Valor do imóvel: " + valorimovel.value + " R$\n\n - Valor do financiamento: " + valorfinanciamento.value + " R$\n\n - Prazo: " + prazo.value + "\n\n - Incluir despesas: " + radiodespesas + "\n\n - Pretende utilizar FGTS: " + radiofgts + ""
 
 
-    if (radioestadocivil_1 == "Casado (a)") {
-      body2 = "\n\n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
+     if (radioestadocivil_1 == "Casado (a)") {
+       body2 = "\n\n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
 
-      console.log(body + body2 + body_imovel)
-    } else {
-      console.log(body + body_imovel)
-    }
-  }
+       console.log(body + body2 + body_imovel)
+     } else {
+       console.log(body + body_imovel)
+     }
+   }
 
   
 

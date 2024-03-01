@@ -89,7 +89,7 @@ body {
     align-items: flex-end;
   }
   
-  .textobanner {
+  .textobanner_desk {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -98,12 +98,12 @@ body {
     left: 15rem;
   }
   
-  .textobanner p{
+  .textobanner_desk p{
     font-size: 3.5rem;
     color: white;
   }
   
-  .textobanner p span{
+  .textobanner_desk p span{
     font-weight: bold;
   }
   
@@ -132,7 +132,7 @@ body {
   .logosegunda img{
     width: 25rem;
     position: relative;
-    bottom: 15rem;
+    bottom: 13rem;
     left: 10rem;
   }
   
@@ -317,14 +317,18 @@ body {
     bottom: 10rem;
   }
 
-  .decidir p {
+  .decidir_desk {
+    display: none;
+  }
+
+  .decidir_mobile p {
     font-size: 3rem;
     color: #838891;
     width: 70%;
     margin-bottom: 4rem;
   }
 
-  .decidir p span{
+  .decidir_mobile p span{
     color: #FFB000;
     font-weight: bold;
   }
@@ -452,7 +456,7 @@ body {
 @media screen and (min-width: 1150px) and (max-width: 1349px){
   .simuladordecredito{
     background-image: linear-gradient(to right, #FF8500 , #E65202);
-    height: 40rem;
+    height: 50rem;
     position: relative;
     bottom: 3rem;
   }
@@ -464,6 +468,10 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+  }
+
+  .textosimulador_grande {
+    display: none;
   }
 
   .irsimulador {
@@ -485,7 +493,11 @@ body {
     display: flex;
     justify-content: center;
   }
-  
+
+  .textomenusanfonado_mobile {
+    display: none;
+  }
+
   .menusanfonado {
     margin-right: auto;
     margin-left: auto;
@@ -841,5 +853,16 @@ button {
 
 .hidden {
     display: none;
+}
+
+.iframe_desk {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.iframe_desk iframe{
+  width: 60rem;
+  height: 35rem;
 }
 }

@@ -11,9 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css_desk_1350px.css">
     <link rel="stylesheet" type="text/css" href="css_desk_1600px.css">
     <link rel="stylesheet" type="text/css" href="css_mobile.css">
+    <link rel="stylesheet" type="text/css" href="css_animacoes.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/smtp.js/dist/smtp.min.js"></script>
 	</head>
 
 
@@ -24,14 +26,14 @@
    <body>
   <!---------------------------------------------------- LOGO DO TOPO + NAVBAR------------------------------------------------>
       <div class="content">
-        <div class="logo_mobile" id="home">
-          <img src="./img/logo/LOGO HORIZONTAL.svg">
+        <div class="logo_mobile">
+          <img src="./img/logo/LOGO HORIZONTAL.svg" class="fade-in">
         </div>
 
         <nav id="navbar">
-              <div class="nav-wrapper">
-                <div class="logo_desk" id="home">
-                  <img src="./img/logo/LOGO HORIZONTAL.svg">
+              <div class="nav-wrapper" id="home">
+                <div class="logo_desk">
+                  <img src="./img/logo/LOGO HORIZONTAL.svg" class="fade-in">
                 </div>
   
                 <ul>
@@ -50,15 +52,21 @@
   <!---------------------------------------------------- BANNER PRINCIPAL ------------------------------------------------>         
           <div class="bannerprincipal">
             <div class="imagensbanner_mobile">
-              <img src="./img/pessoas/casal_mobile.webp"> 
+              <img src="./img/pessoas/casal_mobile.webp" class="fade-in"> 
             </div>
 
             <div class="imagensbanner_desk">
-                <img id="img1" src="./img/pessoas/casal_desk.webp">
-                <img id="img2" src="./img/icones/iconeconquistha.svg"> 
+                <img id="img1" src="./img/pessoas/casal_desk.webp" class="fade-in">
+                <img id="img2" src="./img/icones/iconeconquistha.svg" class="fade-in"> 
             </div>
 
-            <div class="textobanner">
+            <div class="textobanner_desk" id="tracking-in-contract">
+              <p class="voce">Você e sua família <br>
+                <span class="casa">de casa nova</span>
+              </p>
+            </div>
+
+            <div class="textobanner_mobile" id="fade-in">
               <p class="voce">Você e sua família <br>
                 <span class="casa">de casa nova</span>
               </p>
@@ -81,7 +89,7 @@
           </div>
             
           <div class="textosegundasection">
-            <p>Somos uma empresa especializada em financiamento imobiliário e crédito com garantia de imóvel com a missão de tornar realidade o nosso sonho da casa própria, garantindo um processo <span>ágil, confiável e confortável.</span></p>
+            <p>Uma empresa especializada em financiamento imobiliário e crédito com garantia de imóvel. Com isso, garantimos a <span>excelência no atendimento, agilidade e soluções.</span></p>
           </div>
         </div>
   
@@ -92,11 +100,11 @@
           <div class="terceirasection">
             <div id="caixas_mobile">
               <div class="caixae">
-                <img src="./img/caixas/caixa esquerda_mobile.png">
+                <img src="./img/caixas/caixa esquerda_mobile.png" class="fade-in">
               </div>
   
               <div class="caixad">
-                <img src="./img/caixas/caixa direita_mobile.png">
+                <img src="./img/caixas/caixa direita_mobile.png" class="fade-in">
               </div>
             </div>
 
@@ -158,10 +166,14 @@
         <div class="quartasection" id="diferenciais">
           <div class="textosquarta">
 
-            <div class="decidir">
+            <div class="decidir_desk" id="tracking-in-contract">
               <p>Porque decidir pela <span>Conquistha</span></p>
             </div>
             
+            <div class="decidir_mobile" id="fade-in">
+              <p>Porque decidir pela <span>Conquistha</span></p>
+            </div>
+
             <div class="listaquarta">
               <ul>
                 <li>Plataforma Multi-Banco</li>
@@ -176,7 +188,7 @@
           </div>
   
           <div class="imagemquarta">
-            <img src="./img/pessoas/mulher.webp">
+            <img src="./img/pessoas/mulher.webp" class="fade-in">
           </div>
         </div>
   
@@ -186,7 +198,7 @@
         <div class="quintasection">
           <div class="wrappertextoquinta">
             <div class="textoquinta">
-              <p>Que a tranquilidade de conquistar seu sonho, <span>seja a nossa Conquistha em lhe atender bem</span></p>
+              <p class="fade-in">Que a tranquilidade de conquistar seu sonho, <span>seja a nossa Conquistha em lhe atender bem</span></p>
             </div>
 
               <div class="faleconosco">
@@ -204,35 +216,35 @@
   <!---------------------------------------------------- BANCOS PARCEIROS (SEXTA SEÇÃO) ------------------------------------------------>      
         <div class="bancosparceiros" id="bancos">
           <div class="textobancos">
-            <p>Bancos  <span>parceiros</span></p>
+            <p id="tracking-in-contract">Bancos  <span>parceiros</span></p>
           </div>
           
           <div class="todosbancos">
             <div class="primeirafileira">
               <div class="itau">
-                <img src="./img/bancos/Itau.png">
+                <img src="./img/bancos/Itau.png" class="fade-in">
               </div>
 
               <div class="bradesco">
-                <img src="./img/bancos/Bradesco.png">
+                <img src="./img/bancos/Bradesco.png" class="fade-in">
               </div>
 
               <div class="caixa">
-                <img src="./img/bancos/Caixa.png">
+                <img src="./img/bancos/Caixa.png" class="fade-in">
               </div>
             </div>
 
             <div class="segundafileira">
               <div class="inter">
-                <img src="./img/bancos/inter.png">
+                <img src="./img/bancos/inter.png" class="fade-in">
               </div>
 
               <div class="santander">
-                <img src="./img/bancos/Santander.png">
+                <img src="./img/bancos/Santander.png" class="fade-in">
               </div>
 
               <div class="brb">
-                <img src="./img/bancos/BRB.png">
+                <img src="./img/bancos/BRB.png" class="fade-in">
               </div>
             </div>
           </div>
@@ -242,23 +254,33 @@
 
 
   <!---------------------------------------------------- SIMULADOR DE CRÉDITO (SÉTIMA SEÇÃO) ------------------------------------------------>      
-        <div class="simuladordecredito">
-          <div class="textosimulador" id="simulador">
-            <p>Realize sua simulação agora mesmo!</p>
+        <div class="simuladordecredito" id="simulador">
+          <div class="textosimulador">
+            <p id="fade-in">Realize sua simulação agora mesmo!</p>
           </div>
 
-          <div class="irsimulador">
-            <a href="https://simulador.credipronto.com.br/?account_id=33706875-a084-5c92-4cc0-651719af279c"><button type="button">Ir para o simulador</button></a>
-          </div> 
+          <div class="textosimulador_grande" id="simulador">
+            <p id="tracking-in-contract">Realize sua simulação agora mesmo!</p>
+          </div>
+          
+          <div class="iframe_desk">
+            <iframe frameborder="0" name="ballswar" scrolling="auto" src="https://simulador.credipronto.com.br/simulation/product?account_id=33706875-a084-5c92-4cc0-651719af279c">
+              <p>Seu navegador não suporta este recurso.</p>
+            </iframe>
+          </div>
         </div>
         
 
 
   <!---------------------------------------------------- MENU SANFONADO (OITAVA SEÇÃO) ------------------------------------------------>       
         <div class="textomenusanfonado">
-          <p>Perguntas frequentes</p>
+          <p id="tracking-in-contract">Perguntas frequentes</p>
         </div>
         
+        <div class="textomenusanfonado_mobile">
+          <p id="fade-in">Perguntas frequentes</p>
+        </div>
+
           <ul class="menusanfonado">
             <!-- ITEM 1 -->
             <li class="nav-item">
@@ -359,7 +381,7 @@
         <div class="textoformulario">
           <div id="wrapperrealize">
             <div class="realizeseusonho">
-              <p>Realize seu sonho <span>com a Conquistha!</span></p>
+              <p class="fade-in">Realize seu sonho <span>com a Conquistha!</span></p>
             </div>
           </div>
           
@@ -380,7 +402,7 @@
 
         
           <!-- Formulário de fato -->
-          <div class="formulario">
+          <form class="formulario">
             <div id="formselecione">
               <p id="selecioneuma">Selecione uma das opções abaixo antes de prosseguir</p>
             </div>
@@ -389,7 +411,7 @@
               <div id="passo1">
                 <div class="rimovel">
                   <input type="radio" id="radioimovel" name="radioform">
-                  <label for="radioimovel">Quero comprar um imóvel</label><br>
+                  <label for="radioimovel">Quero solicitar um financiamento</label><br>
                 </div>
                 
                 <div class="rparceiros">
@@ -646,7 +668,7 @@
               </div>
             </div>
             
-          </div>
+          </form>
       </div>
 
 
@@ -672,8 +694,9 @@
 
 
   <!-------------------------------------------------- BOTÃO FLUTUANTE DO WHATSAPP ------------------------------------------->
-  <div class="botaowpp"> 
+  <div class="botaowpp" > 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <a href="https://wa.me/5516991224508" class="float" target="_blank"  id="heartbeat"> -->
     <a href="https://wa.me/5516991224508" class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>

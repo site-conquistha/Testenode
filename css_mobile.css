@@ -70,14 +70,18 @@
     display: none;
   }
 
-  .bannerprincipal .textobanner {
+  .textobanner_desk {
+    display: none;
+  }
+
+  .bannerprincipal .textobanner_mobile {
     width: 100vw;
     display: flex;
     justify-content: center;
     color: #FFFFFF;
   }
 
-  .bannerprincipal .textobanner p{
+  .bannerprincipal .textobanner_mobile p{
     color: white;
     font-size: 9vw;
     font-weight: 400;
@@ -85,7 +89,7 @@
     padding-top: 3vw;
   }
 
-  .bannerprincipal .textobanner p span{
+  .bannerprincipal .textobanner_mobile p span{
     font-weight: 700;
   }
 
@@ -120,7 +124,9 @@
 
   .segundasection .textosegundasection{
     width: 80vw;
+    position: relative;
     margin: 10vw 0vw;
+    margin-right: 7vw;
   }
 
   .segundasection .textosegundasection p{
@@ -312,19 +318,23 @@
     color: #838891;
   }
 
-  .quartasection .textosquarta .decidir {
+  .decidir_desk {
+    display: none;
+  }
+
+  .quartasection .textosquarta .decidir_mobile {
     width: 100vw;
     display: flex;
     justify-content: center;
   }
 
-  .quartasection .textosquarta .decidir p {
+  .quartasection .textosquarta .decidir_mobile p {
     font-size: 10vw;
     margin-left: 7.5vw;
     margin-bottom: -0.5vw;
   }
   
-  .quartasection .textosquarta .decidir p span{
+  .quartasection .textosquarta .decidir_mobile p span{
     color: #FFB000;
     font-weight: bold;
   }
@@ -472,6 +482,7 @@
     width: 100vw;
     margin-top: 10vw;
     padding-bottom: 10vw;
+    height: 200vw;
   }
 
   .simuladordecredito .textosimulador {
@@ -489,6 +500,10 @@
     margin-right: 3vw;
   }
 
+  .textosimulador_grande {
+    display: none;
+  }
+
   .simuladordecredito .irsimulador {
     width: 100vw;
     display: flex;
@@ -500,13 +515,17 @@
 
 /* --------------------------- MENU SANFONADO (OITAVA SEÇÃO) --------------------------------------*/
 @media screen and (max-width: 481px){
-  .textomenusanfonado p{
+  .textomenusanfonado_mobile p{
     font-size: 8vw;
     text-align: center;
     font-weight: bold;
     color: #838891;
     margin-top: 14vw;
     padding-bottom: 3vw;
+  }
+
+  .textomenusanfonado {
+    display: none;
   }
 
   .menusanfonado {
@@ -642,7 +661,7 @@
 
   .formulario .wrapperpasso1 #passo1 .rimovel{
     margin-bottom: 10vw;
-    margin-left: -10vw;
+    margin-left: -4vw;
   }
 
   .formulario .wrapperpasso1 #passo1 .rimovel #radioimovel{
@@ -651,7 +670,7 @@
 
   .formulario .wrapperpasso1 #passo1 .rparceiros{
     margin-bottom: 10vw;
-    margin-left: -10vw;
+    margin-left: -4vw;
   }
 
   .formulario .wrapperpasso1 #passo1 .rparceiros #radioparceiros{
@@ -897,7 +916,16 @@
   .hidden {
     display: none;
   }
+
+  .iframe_desk {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .iframe_desk iframe{
+    width: 90vw;
+    height: 160vw;
+    overflow: scroll;
+  }
 }
-
-
-
