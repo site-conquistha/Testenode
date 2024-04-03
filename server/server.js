@@ -25,6 +25,7 @@ app.use(bodyParser.json());
 app.use(
   cors({
     origin: "https://testenode-cliente.vercel.app/",
+    methods: "POST"
   })
 );
 app.options("*",cors());
