@@ -6,7 +6,7 @@ const Nodemailer = require("nodemailer");
 dotenv.config();
 
 const app = Express();
-const PORT = process.env.PORT || 3001;
+//const PORT = process.env.PORT || 3001; Não precisa por ser no domínio
 
 // nodemailer
 const transporter = Nodemailer.createTransport({
@@ -50,6 +50,8 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+app.listen(3000, () => console.log("Server ready on port 3000."));
+
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
