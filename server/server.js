@@ -28,7 +28,7 @@ app.use(
     methods: "POST"
   })
 );
-app.options("*",cors());
+//app.options("*",cors());
 
 // rota GET, POST, PUT, DELETE
 app.post("/api", (req, res) => {
