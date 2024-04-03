@@ -223,7 +223,7 @@ formButtonSubmit.addEventListener('click', event => {
     //console.log(text_send) //Teste para saber se os valores estão corretos
 
     //Esse fetch é responsável por procurar a porta cujo o servidor está rodando  
-  fetch("http://localhost:3000", {
+  fetch("https://testenode-nine.vercel.app:3000", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -374,7 +374,7 @@ formButtonSubmit.addEventListener('click', event => {
       //console.log(text_send);
 
       //Esse aqui é pro primeiro if, ou seja, com 2 proponentes
-      fetch("http://localhost:3000", {
+      fetch("https://testenode-nine.vercel.app:3000", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -404,7 +404,7 @@ formButtonSubmit.addEventListener('click', event => {
         text_send = (body1 + body_imovel);
         //console.log(text_send)
 
-        fetch("http://localhost:3000", {
+        fetch("https://testenode-nine.vercel.app:3000", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
