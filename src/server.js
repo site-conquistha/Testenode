@@ -20,10 +20,11 @@ const transporter = Nodemailer.createTransport({
   }
 });
 
+//definir as origens aceitas
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "https://strong-stardust-6b89d0.netlify.app",
+    origin: "http://localhost:5500",
   })
 );
 
