@@ -24,7 +24,7 @@ const transporter = Nodemailer.createTransport({
 app.use(bodyParser.json());
 app.use(
   cors({
-    origin: "*",
+    origin: "testenode-cliente.vercel.app/:1",
   })
 );
 
