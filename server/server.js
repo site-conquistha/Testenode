@@ -27,6 +27,7 @@ app.use(
     origin: "testenode-cliente.vercel.app/:1",
   })
 );
+app.options("*",cors());
 
 // rota GET, POST, PUT, DELETE
 app.post("/", (req, res) => {
