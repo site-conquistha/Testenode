@@ -49,7 +49,7 @@ app.post("/api", (req, res) => {
   transporter.sendMail(options, (error, info) => {
     if (error) {
       console.log(error);
-      res.status(500).send("Erro ao enviar email.");
+      res.status(500).send(error.message);
     } else {
       console.log("Email enviado com sucesso");
       res.status(200).send("Email enviado com sucesso");
