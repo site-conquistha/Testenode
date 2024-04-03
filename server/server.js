@@ -30,6 +30,10 @@ app.use(
 );
 //app.options("*",cors());
 
+app.get("/", (req, res) => {
+  res.status(200).send("deu bom");
+})
+
 // rota GET, POST, PUT, DELETE
 app.post("/api", (req, res) => {
   const { name, subject, text } = req.body;
