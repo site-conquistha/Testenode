@@ -233,7 +233,7 @@ formButtonSubmit.addEventListener('click', event => {
     body: JSON.stringify({
       name: 'Formulário Site Conquistha',
       subject: "Envio de respostas do formulário",
-        text: text_send,
+      text: text_send,
       }),
    })
     .then((response) => { //Apresenta um alerta pro cliente informando se o email foi enviado ou não
@@ -417,7 +417,7 @@ formButtonSubmit.addEventListener('click', event => {
         },
         body: JSON.stringify({
           name: 'Formulário Site Conquistha',
-        subject: "Envio de respostas do formulário",
+          subject: "Envio de respostas do formulário",
           text: text_send,
         }),
       })
