@@ -37,6 +37,7 @@ app.get("/", (req, res) => {
 // rota GET, POST, PUT, DELETE
 app.post("/api", (req, res) => {
   const { name, subject, text } = req.body;
+  console.log(name, subject, text)
 
   const options = {
     from: process.env.EMAIL,
