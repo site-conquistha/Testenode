@@ -373,7 +373,7 @@ formButtonSubmit.addEventListener('click', event => {
       //body2 = "\n\n\n\n Dados 2* proponente: \n\n\n - Nome completo: " + nomecompleto_2.value + "\n\n - Data nascimento: " + datadenascimento_2.value + "\n\n - CPF: " + cpf_2.value + "\n\n - RG: " + rg_2.value + "\n\n - Endereço: " + endereco_2.value + "\n\n - Telefone: " + telefone_2.value + "\n\n - E-mail: " + email_2.value + "\n\n - Estado civil: " + radioestadocivil_2 + "\n\n - Empresa onde trabalha: " + empresaondetrabalha_2.value + "\n\n - Cargo profissional: " + cargoprofissional_2.value + "\n\n - Renda mensal: " + rendamensal_2.value + "\n\n - Bancos nos quais possui relacionamento: " + bancos_2.value + "" 
 
       text_send = (body1 + body2 + body_imovel);
-      console.log(text_send);
+      //console.log(text_send);
 
       //Esse aqui é pro primeiro if, ou seja, com 2 proponentes
       fetch("https://testenode-liart.vercel.app/api", {
