@@ -31,7 +31,7 @@ app.use(
 app.options("*",cors());
 
 // rota GET, POST, PUT, DELETE
-app.post("/", (req, res) => {
+app.post("/api", (req, res) => {
   const { name, subject, text } = req.body;
 
   const options = {
