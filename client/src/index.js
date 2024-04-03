@@ -225,6 +225,7 @@ formButtonSubmit.addEventListener('click', event => {
     //Esse fetch é responsável por procurar a porta cujo o servidor está rodando  
   fetch("https://testenode-liart.vercel.app", {
     method: "POST",
+    mode: 'no-cors',
     headers: {
       "Content-Type": "application/json",
       'Origin': 'https://testenode-cliente.vercel.app/',
@@ -377,6 +378,7 @@ formButtonSubmit.addEventListener('click', event => {
       //Esse aqui é pro primeiro if, ou seja, com 2 proponentes
       fetch("https://testenode-liart.vercel.app", {
         method: "POST",
+        mode: 'no-cors',
         headers: {
           "Content-Type": "application/json",
           'Origin': 'https://testenode-cliente.vercel.app/',
@@ -408,6 +410,7 @@ formButtonSubmit.addEventListener('click', event => {
 
         fetch("https://testenode-liart.vercel.app", {
           method: "POST",
+          mode: 'no-cors',
           headers: {
             "Content-Type": "application/json",
             'Origin': 'https://testenode-cliente.vercel.app/',
