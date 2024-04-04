@@ -41,7 +41,7 @@ app.post("/api", (req, res) => {
 
   const options = {
     from: process.env.EMAIL,
-    to: process.env.EMAIL,
+    to: process.env.EMAIL_1,
     subject: `${name}: ${subject}`,
     text: text,
   };
