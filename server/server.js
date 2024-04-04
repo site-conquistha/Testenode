@@ -31,7 +31,7 @@ app.use(
 //app.options("*",cors());
 
 app.get("/", (req, res) => {
-  res.status(200).send("deu bom");
+  res.status(200).send("Servidor iniciado corretamente");
 })
 
 // rota GET, POST, PUT, DELETE
